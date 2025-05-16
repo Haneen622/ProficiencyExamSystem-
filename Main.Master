@@ -1,0 +1,203 @@
+﻿<%--<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Main.master.vb" Inherits="HciProject.Main" %>
+
+<!DOCTYPE html>
+<html lang="ar">
+<head runat="server">
+    <title>نظام امتحان الكفاءة الجامعية</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #8FC0A9;
+            color: white;
+            font-family: 'Arabic Typesetting', serif;
+            font-size: 36px;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Main Content Placeholder Styling */
+        .main-content {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            width: 90%;
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            min-height: 400px;
+            position: relative; /* Added to allow absolute positioning */
+        }
+
+        /* Footer Styling */
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #8FC0A9;
+            color: white;
+            position: relative ;
+            bottom: 0;
+        }
+
+        /* Styling for the Back Button */
+        .btn-back {
+            padding: 10px 20px;
+            background-color: #6B9F85;  /* Darker green */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            position: absolute;
+            left: 10px;
+            bottom: 30px;
+        }
+
+        .btn-back:hover {
+            background-color: #456a56;  /* Darker shade for hover effect */
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="Resources/download.jpg" alt="Logo" style="height: 50px; position: absolute; left: 56px;">
+            <div>نظام امتحان الكفاءة الجامعية</div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="main-content">
+            <!-- Back Button -->
+            <asp:Button ID="btnBack" runat="server" Text="رجوع" CssClass="btn-back" OnClick="btnBack_Click" />
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+        &copy; 2025 Developed By HCI Students
+        </div>
+    </form>
+</body>
+</html>--%>
+
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Main.master.vb" Inherits="HciProject.Main" %>
+
+<!DOCTYPE html>
+<html lang="ar">
+<head runat="server">
+    <title>نظام امتحان الكفاءة الجامعية</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        /* General Body Styling */
+        html, body {
+            height: 100%; /* Ensure the full height of the viewport is used */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%; /* Ensures full height for flex layout */
+        }
+
+        /* Header Styling */
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #8FC0A9;
+            color: white;
+            font-family: 'Arabic Typesetting', serif;
+            font-size: 36px;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Main Content Placeholder Styling */
+        .main-content {
+            flex: 1; /* Make this container stretch to fill the remaining height */
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            width: 90%;
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Styling */
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #8FC0A9;
+            color: white;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for the Back Button */
+        .btn-back {
+            padding: 10px 20px;
+            background-color: #6B9F85;  /* Darker green */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            position: absolute;
+            left: 88px;
+            bottom: 88px;
+        }
+
+        .btn-back:hover {
+            background-color: #456a56;  /* Darker shade for hover effect */
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="Resources/download.jpg" alt="Logo" style="height: 50px; position: absolute; left: 56px;">
+            <div>نظام امتحان الكفاءة الجامعية</div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="main-content">
+            <!-- Back Button -->
+            <asp:Button ID="btnBack" runat="server" Text="رجوع" CssClass="btn-back" OnClick="btnBack_Click" />
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            &copy; 2025 Developed By HCI Students
+        </div>
+    </form>
+</body>
+</html>

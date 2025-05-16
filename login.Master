@@ -1,0 +1,79 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="login.master.vb" Inherits="HciProject.login1" %>
+
+<!DOCTYPE html>
+<html lang="ar"> <!-- Added `lang` attribute for better accessibility -->
+<head runat="server">
+    <title>نظام امتحان الكفاءة الجامعية</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif; /* Clean font fallback */
+            background-color: #f4f4f4; /* Soft background to reduce eye strain */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #8FC0A9; /* Gentle green shade for calmness */
+            color: white;
+            font-family: 'Arabic Typesetting', serif;
+            font-size: 36px;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+        }
+
+        /* Main Content Placeholder Styling */
+        .main-content {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: transparent;
+            width: 90%;
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for elevation */
+            min-height: 400px; /* Ensures consistency */
+        }
+
+        /* Footer Styling */
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #8FC0A9;
+            color: white;
+            position: relative;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!-- Header Section -->
+    <div class="header" style="display: flex; align-items: center; justify-content: center; background-color: #8FC0A9; color: white; font-family: 'Arabic Typesetting', serif; font-size: 36px; font-weight: bold; padding: 20px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); position: relative;">
+    <!-- Image on the left -->
+    <img src="Resources/download.jpg" alt="Logo" style="height: 50px; position: absolute; left: 56px;">
+    
+    <!-- Text in the exact center -->
+    <div>نظام امتحان الكفاءة الجامعية</div>
+</div>
+
+    <!-- Content Section -->
+    <div class="main-content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        &copy; 2025 Developed By HCI Students
+    </div>
+    </form>
+</body>
+</html>
+
